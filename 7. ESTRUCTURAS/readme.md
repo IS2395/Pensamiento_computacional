@@ -1,28 +1,3 @@
-1 inicio
-2 declarar num1, num2, num3
-3 mostrar "ingresa el primer numero"
-4 asignar num1
-5 mostrar ("ingresa el segundo numero"
-6 asignar num2
-7 mostrar ("ingresa el tercer numero")
-8 asignar num3
-9 si num1<num2 y num1<num3 entonces
-	si num2<num3 entonces
-		mostrar ("Los numeros ordenados son ",num1,num2,num3)
-	sino entonces
-		mostrar ("Los numeros ordenados son ",num1,num3,num2) 
-  si num2<num3 y num2<1 entonces
-	si num1<num3 entonces
-		mostrar ("Los numeros ordenados son ",num2,num1,num3)
-	sino entonces
-		mostrar ("Los numeros ordenados son ",num2,num3,num1)
-  si num3<num1 y num3<num2 entonces
-	si num1<num2 entonces
-		mostrar ("Los numeros ordenados son ",num3,num1,num2)
-	sino entonces
-		mostrar ("Los numeros ordenados son ",num3,num2,num1)
-10 fin  	
-	
 # ESTRUCTURAS DE CONTROL
 En programación, las estructuras de control permiten modificar el flujo de ejecución de las instrucciones de un programa.
 
