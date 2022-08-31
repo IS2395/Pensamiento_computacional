@@ -28,5 +28,4 @@ pseudocodigo
         Fin Para
       FinAlgoritmo
       
-      
-      ![image](https://user-images.githubusercontent.com/111446113/187726173-e13b7c30-43a1-4480-b2fe-07147ca620f4.png)
+![image](https://user-images.githubusercontent.com/111446113/187726173-e13b7c30-43a1-4480-b2fe-07147ca620f4.png)
