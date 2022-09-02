@@ -34,17 +34,39 @@ Pseudocodigo
 pregunta el año de nacimiento, imprime la edad
 
     1 inicio
-    2 fecha, edad, reps
-    3 mostrar "ingresa el año en que naciste"
-    4 asignar fecha
-    5 edad=2022-fecha
-    6 mostrar "quieres imprimir tu edad: s/n"
-    7 mientras reps=="S" o reps=="s" hacer
-      mostrar "tu edad es de ",edad,"años"
-      mostrar "quieres hacer otra consulta:s/n"
-      asignar reps
-    8 fin
+    2 declarar fecha(int), fecha_ac(int), edad(int), reps(char)
+    3 mostrar "quieres calcular tu edad: s/n"
+    4 asignar reps
+    5 mientras reps=="S" o reps=="s" hacer
+        mostrar "ingresa el año en que naciste"
+        asignar fecha
+        mostrar "ingresa el año actual"
+        asignar fecha_ac
+        edad=fecha_ac-fecha
+        mostrar "tu edad es: ",edad," años"
+        mostrar "quieres hacer otra consulta: s/n)
+        asignar reps
+    6 fin 
+![image](https://user-images.githubusercontent.com/111446113/188036642-864c4b58-b4b8-4063-9b1a-d16bd2110d65.png)
 
-![imagen](https://user-images.githubusercontent.com/111446113/187961202-123b5900-65e6-4bc9-8afb-b3758b3cb884.png)
+Pseudocodigo
 
-    
+        Algoritmo sin_titulo
+            fecha<-0
+            fecha_ac<-0
+            edad<-0
+            reps=''
+            Escribir "quieres calcular tu edad:s/n"
+            Leer reps
+
+            Mientras reps=="S" o reps=="s" Hacer
+                Escribir "ingresa el año en que naciste"
+                Leer fecha
+                Escribir "ingresa el año actual"
+                Leer fecha_ac		
+                edad=fecha_ac-fecha	
+                Escribir "tu edad es: ",edad," años"
+                Escribir "quieres hacer otra consulta:s/n"
+                Leer reps
+            Fin Mientras
+        FinAlgoritmo
