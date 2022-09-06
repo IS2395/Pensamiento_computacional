@@ -1,7 +1,10 @@
-Calculadora
+# Calculadora
+
+## Diagrama de flujo
+
 ![imagen](https://user-images.githubusercontent.com/111446113/188190984-f1c3bea2-725e-4c49-9352-2afbf70d1d6b.png)
 
-Pseudocodigo
+## Pseudocodigo
 
     Algoritmo sin_titulo
       num1<-0.0
