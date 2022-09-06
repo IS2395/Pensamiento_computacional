@@ -1,13 +1,65 @@
 # Algoritmo del proyecto final 1
-## Algoritmo
-    1 inicio
-    2 declarar numi (int), nums (int)
-    3 asignar nums=8
-    4 mostrar("bienvenido al juego del numero secreto")
-    5 mostrar("ingresa un numero del 1 al 10")
-    6 asignar numi
-    7 si nums==numi entonces mostrar ("felicidades, le atinaste al numero")
-       sino entonces 
-          si numi<nums entonces mostrar ("lastima, perdiste, el numero ingresado es menor al numero secreto")
-            si no entonces mostrar("lastima, perdiste, el numero ingresado es mayor al numero secreto")
-    8 fin
+
+## Diagrama de flujo
+
+![image](https://user-images.githubusercontent.com/111446113/188532185-7b590c91-95b6-4c70-859f-f390accc3edf.png)
+
+## Pseudocodigo
+
+    Algoritmo sin_titulo
+                numi<-0.0
+                nums<-8
+                vidas<-5
+                reps<-''
+                Escribir "||||||||||||||||||||||||||||||"
+                Escribir "|||       BIENVENIDO       |||"
+                Escribir "||||||||||||||||||||||||||||||"
+                Escribir ""
+                Escribir "Este es el juego del numero secreto"
+                Escribir ""
+                Escribir "Las instrucciones son simples"
+                Escribir ""
+                Escribir "El numero secreto se encuentra entre el 1 y el 10"
+                Escribir "Tendras 5 intentos para adivinar el numero"
+                Escribir "Si lo logras, habras ganado el juego"
+                Escribir ""
+                Escribir "¡¡¡COMENCEMOS!!!"
+                Escribir ""
+
+                Mientras reps<>'n' Hacer
+                    Escribir "Ingresa un numero del 1 al 10"
+                    Leer numi
+                    Si nums==numi Entonces
+                        Escribir "Felicidades, ganaste"
+                    SiNo
+                        vidas=vidas-1
+                        Mientras nums<>numi y vidas>0 Hacer
+
+                            Si nums<numi Entonces
+                                Escribir "El numero secreto es menor al que ingresaste"
+                                Escribir "Te quedan ",vidas," intentos"
+                                Escribir "Intentalo de nuevo"
+                                Leer numi
+                                vidas=vidas-1
+                            SiNo
+                                Escribir "El numero secreto es mayor al que ingresaste"
+                                Escribir "Te quedan ",vidas," intentos"
+                                Escribir "Intentalo de nuevo"
+                                Leer numi
+                                vidas=vidas-1
+                            Fin Si				
+                        Fin Mientras
+                        Si nums==numi Entonces
+                            Escribir "Felicidades, ganaste"
+                        SiNo
+                            Escribir "No pudiste adivinar el numero"
+                            Escribir "y te quedaste sin intentos"
+                            Escribir "Has perdido"
+                        Fin Si
+                    Fin Si
+                    vidas=5
+                    Escribir "¿Quieres jugar otra vez? s/n"
+                    Leer reps
+
+                Fin Mientras
+            FinAlgoritmo
