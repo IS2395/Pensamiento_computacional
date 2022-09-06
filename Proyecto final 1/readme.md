@@ -6,7 +6,7 @@
 
 ## Pseudocodigo
 
-    Algoritmo sin_titulo
+    Algoritmo juego_numero_secreto
                 numi<-0.0
                 nums<-8
                 vidas<-5
